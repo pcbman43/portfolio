@@ -1,0 +1,53 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #14182b;
+    color: #ae3d38;
+    background-image: url("../img/pine-forest-desktop-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*body {
+    background-color: #14182b;
+    color: #ae3d38;*
+}*/
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    padding-right: 1.5rem;
+}
+
+img.main {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-row {
+    background-color: #374277
+}
+
+.vl {
+    border-right: 6px solid #ae3d38;
+    height: 100%;
+}
+
+.first-color { 
+	background: #1d1f20; 
+}
+	
+.second-color { 
+	background: #222426; 
+}
+
+.third-color { 
+	background: #303436; 
+}
+
+.fourth-color { 
+	color: #aaacb1; 
+}
