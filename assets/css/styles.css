@@ -21,6 +21,10 @@ a {
     padding-right: 1.5rem;
 }
 
+.navbar-brand:hover {
+    color: #aaacb1;
+}
+
 img.main {
     max-width: 100%;
     height: auto;
