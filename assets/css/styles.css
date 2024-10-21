@@ -17,8 +17,12 @@ a {
     text-decoration: none;
 }
 
-.navbar {
+.navbar-main {
     padding-right: 1.5rem;
+}
+
+.navbar {
+    padding-bottom: 0rem;
 }
 
 .navbar-brand:hover {
