@@ -11,7 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -25,107 +25,117 @@
 
 <body class="fourth-color">
 
-    <div class="container p-4 first-color" style="min-height: 100vh">
+<div class="container p-4 first-color" style="min-height: 100vh">
 
-        <nav class="navbar mb-4 navbar-expand-lg justify-content-between border-bottom position-relative">
+    <nav class="navbar mb-4 navbar-expand-lg justify-content-between border-bottom position-relative">
 
-            <div class="d-flex w-100 align-items-center justify-content-between pb-4 navbar-main">
-                <div class="d-flex align-items-center">
-                    <div>
-                        <a href="index.html" class="navbar-brand fourth-color">Mihkel Kougia</a>
-                    </div>
-
-                    <div class="d-none d-md-block">
-                        <a href="about.html" class="mx-2 rounded third-color p-2 fourth-color">Minust</a>
-                        <a href="projects.html" class="mx-2 rounded third-color p-2 fourth-color">Projektid</a>
-                        <a href="tech.html" class="mx-2 rounded third-color p-2 fourth-color">Tehnilised oskused</a>
-                    </div>
-                </div>
-
-                <div class="d-md-none position-absolute start-50 translate-middle-x" data-bs-toggle="collapse"
-                    href="#mobileNav" role="button">
-                    <i class="bi bi-list fourth-color" style="font-size: 2rem;"></i>
-                </div>
-
+        <div class="d-flex w-100 align-items-center justify-content-between pb-4 navbar-main">
+            <div class="d-flex align-items-center">
                 <div>
-                    <a href="https://github.com/pcbman43">
-                        <i class="bi bi-github fourth-color" style="font-size: 2rem;"></i>
-                    </a>
+                    <a href="index.html" class="navbar-brand fourth-color">Mihkel Kougia</a>
                 </div>
 
-            </div>
-
-            <!-- Vertical Navigation Menu (hidden by default, toggled with collapse) -->
-            <div class="w-100 d-flex justify-content-center d-md-none">
-                <div id="mobileNav" class="text-center collapse">
-                    <a href="about.html" class="d-block p-2 fourth-color border-top">Minust</a>
-                    <a href="projects.html" class="d-block p-2 fourth-color border-top">Projektid</a>
-                    <a href="tech.html" class="d-block p-2 fourth-color border-top">Tehnilised oskused</a>
+                <div class="d-none d-md-block">
+                    <a href="about.html" class="mx-2 rounded third-color p-2 fourth-color">Minust</a>
+                    <a href="projects.html" class="mx-2 rounded third-color p-2 fourth-color">Projektid</a>
+                    <a href="tech.html" class="mx-2 rounded third-color p-2 fourth-color">Tehnilised oskused</a>
                 </div>
             </div>
-        </nav>
 
-        <div class="row my-5">
-            <div class="col-12 d-flex flex-column justify-content-between">
+            <div class="d-md-none position-absolute start-50 translate-middle-x" data-bs-toggle="collapse"
+                 href="#mobileNav" role="button">
+                <i class="bi bi-list fourth-color" style="font-size: 2rem;"></i>
+            </div>
 
-                <h1 class="text-start display-6 fw-bold text-uppercase">Projektid</h1>
+            <div>
+                <a href="https://github.com/pcbman43">
+                    <i class="bi bi-github fourth-color" style="font-size: 2rem;"></i>
+                </a>
+            </div>
 
-                <h2 class="text-start display-7 fw-bold text-uppercase mt-4">webuyanycarflorida.com</h2>
-                <div class="rounded second-color">
-                    <p class="fs-5 p-2">Veebiportaal kasutatud autode müümiseks, mis on kuvatav nutiseadmest ja arvutist
-                        ning võimaldab ankeetide täitmist, aja broneerimist ning nende kuvamist läbi Apple kalendri.</p>
-                    <p class="fs-5 p-2">Projekt kasutab Node.js, Express.js, Handlebars ja SQLite’i.</p>
-                    <p class="fs-5 p-2">Osalesin projektis full-stack arendajana.<br>
-                        Tegelesin kasutajaliidese arendamise, andmete valideerimisreeglite ja Apple kalendri
-                        integreerimisega, broneerimissüsteemi arendamisega ja administaatori keskkonna loomisega.</p>
-                    <p class="fs-5 p-2"><a
-                            href="https://bitbucket.org/highpalm/webuyanycarflorida.com">bitbucket.org/highpalm/webuyanycarflorida.com</a>
-                    </p>
-                </div>
+        </div>
 
-                <h2 class="text-start display-7 fw-bold text-uppercase mt-4">PuhastusProff OÜ Finar</h2>
-                <div class="rounded second-color">
-                    <p class="fs-5 p-2">PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete
-                        haldamiseks.</p>
-                    <p class="fs-5 p-2">Tegelesin tõrgete parandamise, funktsionaalsuse arendamise, andmebaasi
-                        struktuuri arendamise, varundamise, taastamise ning tihti andmebaasi migreerimisega MSSQL ja
-                        MySQL vahel.</p>
-                    <p class="fs-5 p-2"><a href="https://pp3.puhastusproff.ee/finar">pp3.puhastusproff.ee/finar</a></p>
-                </div>
+        <!-- Vertical Navigation Menu (hidden by default, toggled with collapse) -->
+        <div class="w-100 d-flex justify-content-center d-md-none">
+            <div id="mobileNav" class="text-center collapse">
+                <a href="about.html" class="d-block p-2 fourth-color border-top">Minust</a>
+                <a href="projects.html" class="d-block p-2 fourth-color border-top">Projektid</a>
+                <a href="tech.html" class="d-block p-2 fourth-color border-top">Tehnilised oskused</a>
+            </div>
+        </div>
+    </nav>
 
-                <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Mihkel Saare Puukool</h2>
-                <div class="rounded second-color">
-                    <p class="fs-5 p-2">PHP põhine veebiportaal taimede tellimiseks ja siseveeb tellimuste
-                        korraldamiseks.</p>
-                    <p class="fs-5 p-2">Tegelesin administraatori ja tellimuste vaate arendamisega, uue vaate loomisega
-                        kullerile, sisestatud andmete automaatse salvestamisega kasutades WebSocketit.<br>
-                        Suurem muudatus, millega tegelesin oli visuaalne pakkimisjuhend, mis näitas, kuidas tuleks
-                        pakkida taimi konteineritesse. Selleks tuli kirjutada algoritm, mis sorteeris taimed kõrguse ja
-                        laiuse järgi kärudesse ja riiulitesse, et säästa ruumi.</p>
-                    <p class="fs-5 p-2"><a href="https://mihkelsaar.ee">mihkelsaar.ee</a></p>
-                </div>
+    <div class="row my-5">
+        <div class="col-12 d-flex flex-column justify-content-between">
 
-                <h2 class="text-start display-7 fw-bold text-uppercase mt-4">movies-api projekt</h2>
-                <div class="rounded second-color">
-                    <p class="fs-5 p-2">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida
-                        kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada filmi
-                        detaile. Administraator võib keskkonnas kuvada logisid.</p>
-                    <p class="fs-5 p-2">Muudatused kajastuvad kõikide klientide brauserites WebSocketi abil.<br>
-                        Veebirakendus kasutab isesigneeritud sertifikaati.<br>
-                        End-point'id on dokumenteeritud Swaggeri abil.</p>
-                    <p class="fs-5 p-2">Projekt kasutab Node.js, JavaScript, Vue.js ja Swagger’it.</p>
-                    <p class="fs-5 p-2"><a
-                            href="https://github.com/pcbman43/movies-api">github.com/pcbman43/movies-api</a></p>
-                </div>
+            <h1 class="text-start display-6 fw-bold text-uppercase">Projektid</h1>
 
+            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Kriit</h2>
+            <div class="rounded second-color">
+                <p class="fs-5 p-2">Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
+                <p class="fs-5 p-2">Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel sisestada
+                    ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete lahendused ja
+                    küsida tagasisidet.</p>
+                <p class="fs-5 p-2">Tegelen full-stack arendajana tõrgete likvideerimise ja
+                    funktsionaalsuse arendamisega.</p>
+            </div>
+
+            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">webuyanycarflorida.com</h2>
+            <div class="rounded second-color">
+                <p class="fs-5 p-2">Veebiportaal kasutatud autode müümiseks, mis on kuvatav nutiseadmest ja arvutist
+                    ning võimaldab ankeetide täitmist, aja broneerimist ning nende kuvamist läbi Apple kalendri.</p>
+                <p class="fs-5 p-2">Projekt kasutab Node.js, Express.js, Handlebars ja SQLite’i.</p>
+                <p class="fs-5 p-2">Osalesin projektis full-stack arendajana.<br>
+                    Tegelesin kasutajaliidese arendamise, andmete valideerimisreeglite ja Apple kalendri
+                    integreerimisega, broneerimissüsteemi arendamisega ja administaatori keskkonna loomisega.</p>
+                <p class="fs-5 p-2"><a
+                        href="https://bitbucket.org/highpalm/webuyanycarflorida.com">bitbucket.org/highpalm/webuyanycarflorida.com</a>
+                </p>
+            </div>
+
+            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">PuhastusProff OÜ Finar</h2>
+            <div class="rounded second-color">
+                <p class="fs-5 p-2">PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete
+                    haldamiseks.</p>
+                <p class="fs-5 p-2">Tegelesin tõrgete parandamise, funktsionaalsuse arendamise, andmebaasi
+                    struktuuri arendamise, varundamise, taastamise ning tihti andmebaasi migreerimisega MSSQL ja
+                    MySQL vahel.</p>
+                <p class="fs-5 p-2"><a href="https://pp3.puhastusproff.ee/finar">pp3.puhastusproff.ee/finar</a></p>
+            </div>
+
+            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Mihkel Saare Puukool</h2>
+            <div class="rounded second-color">
+                <p class="fs-5 p-2">PHP põhine veebiportaal taimede tellimiseks ja siseveeb tellimuste
+                    korraldamiseks.</p>
+                <p class="fs-5 p-2">Tegelesin administraatori ja tellimuste vaate arendamisega, uue vaate loomisega
+                    kullerile, sisestatud andmete automaatse salvestamisega kasutades WebSocketit.<br>
+                    Suurem muudatus, millega tegelesin oli visuaalne pakkimisjuhend, mis näitas, kuidas tuleks
+                    pakkida taimi konteineritesse. Selleks tuli kirjutada algoritm, mis sorteeris taimed kõrguse ja
+                    laiuse järgi kärudesse ja riiulitesse, et säästa ruumi.</p>
+                <p class="fs-5 p-2"><a href="https://mihkelsaar.ee">mihkelsaar.ee</a></p>
+            </div>
+
+            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">movies-api projekt</h2>
+            <div class="rounded second-color">
+                <p class="fs-5 p-2">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida
+                    kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada filmi
+                    detaile. Administraator võib keskkonnas kuvada logisid.</p>
+                <p class="fs-5 p-2">Muudatused kajastuvad kõikide klientide brauserites WebSocketi abil.<br>
+                    Veebirakendus kasutab isesigneeritud sertifikaati.<br>
+                    End-point'id on dokumenteeritud Swaggeri abil.</p>
+                <p class="fs-5 p-2">Projekt kasutab Node.js, JavaScript, Vue.js ja Swagger’it.</p>
+                <p class="fs-5 p-2"><a
+                        href="https://github.com/pcbman43/movies-api">github.com/pcbman43/movies-api</a></p>
             </div>
 
         </div>
 
     </div>
 
-    <!-- Bootstrap JS (loaded at the bottom for faster loading) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+</div>
+
+<!-- Bootstrap JS (loaded at the bottom for faster loading) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
