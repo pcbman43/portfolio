@@ -5,7 +5,6 @@ body {
     color: #aaacb1;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 /*body {
@@ -43,18 +42,26 @@ img.main {
     height: 100%;
 }
 
-.first-color { 
-	background: #1d1f20; 
-}
-	
-.second-color { 
-	background: #222426; 
+.first-color {
+    background: #1d1f20;
 }
 
-.third-color { 
-	background: #303436; 
+.second-color {
+    background: #222426;
 }
 
-.fourth-color { 
-	color: #aaacb1; 
+.third-color {
+    background: #303436;
+}
+
+.fourth-color {
+    color: #aaacb1;
+}
+
+.project-card:hover {
+    color: white;
+    background-color: #44484c !important; /* Change background color on hover */
+    transform: scale(1.05) !important; /* Slightly enlarge the card */
+    transition: transform 0.3s ease, background-color 0.3s ease !important; /* Smooth transition */
+    cursor: pointer; /* Change the cursor to a pointer */
 }

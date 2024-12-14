@@ -25,11 +25,38 @@
 
 <body class="fourth-color">
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content second-color">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Projekti kirjeldus</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="text-start display-7 fw-bold text-uppercase p-2 text-break">Kriit</h2>
+                <p class="fs-5 p-2">Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
+                <p class="fs-5 p-2">Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel sisestada
+                    ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete lahendused
+                    ja
+                    küsida tagasisidet.</p>
+                <p class="fs-5 p-2">Tegelen full-stack arendajana tõrgete likvideerimise ja
+                    funktsionaalsuse arendamisega.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container p-4 first-color" style="min-height: 100vh">
 
     <nav class="navbar mb-4 navbar-expand-lg justify-content-between border-bottom position-relative">
 
         <div class="d-flex w-100 align-items-center justify-content-between pb-4 navbar-main">
+
             <div class="d-flex align-items-center">
                 <div>
                     <a href="index.html" class="navbar-brand fourth-color">Mihkel Kougia</a>
@@ -68,68 +95,75 @@
     <div class="row my-5">
         <div class="col-12 d-flex flex-column justify-content-between">
 
-            <h1 class="text-start display-6 fw-bold text-uppercase">Projektid</h1>
+            <h1 class="text-center display-6 fw-bold text-uppercase">Projektid</h1>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Kriit</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
-                <p class="fs-5 p-2">Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel sisestada
-                    ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete lahendused ja
-                    küsida tagasisidet.</p>
-                <p class="fs-5 p-2">Tegelen full-stack arendajana tõrgete likvideerimise ja
-                    funktsionaalsuse arendamisega.</p>
+            <h2 class="text-center display-7 fw-bold text-uppercase m-4">aktiivne</h2>
+
+            <!-- Kriit -->
+            <div class="row justify-content-evenly" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="project-card col-12 col-md-5 rounded second-color pe-5 p-4">
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2 text-break">Kriit</h2>
+                    <p class="fs-5 p-2">Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
+                    <p class="fs-5 p-2">Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel sisestada
+                        ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete lahendused
+                        ja
+                        küsida tagasisidet.</p>
+                    <p class="fs-5 p-2">Tegelen full-stack arendajana tõrgete likvideerimise ja
+                        funktsionaalsuse arendamisega.</p>
+                </div>
             </div>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">webuyanycarflorida.com</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">Veebiportaal kasutatud autode müümiseks, mis on kuvatav nutiseadmest ja arvutist
-                    ning võimaldab ankeetide täitmist, aja broneerimist ning nende kuvamist läbi Apple kalendri.</p>
-                <p class="fs-5 p-2">Projekt kasutab Node.js, Express.js, Handlebars ja SQLite’i.</p>
-                <p class="fs-5 p-2">Osalesin projektis full-stack arendajana.<br>
-                    Tegelesin kasutajaliidese arendamise, andmete valideerimisreeglite ja Apple kalendri
-                    integreerimisega, broneerimissüsteemi arendamisega ja administaatori keskkonna loomisega.</p>
-                <p class="fs-5 p-2"><a
-                        href="https://bitbucket.org/highpalm/webuyanycarflorida.com">bitbucket.org/highpalm/webuyanycarflorida.com</a>
-                </p>
+            <h2 class="text-center display-7 fw-bold text-uppercase m-4">valmis</h2>
+
+
+            <div class="row justify-content-evenly">
+
+                <div class="project-card col-12 col-md-5 rounded second-color my-4 pe-5 p-4 d-flex flex-column text-break">
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">webuyanycarflorida.com</h2>
+                    <div class="flex-grow-1 d-flex align-items-center">
+                        <p class="fs-5 p-2">Veebiportaal kasutatud autode müümiseks, mis on kuvatav nutiseadmest ja
+                            arvutist
+                            ning võimaldab ankeetide täitmist, aja broneerimist ning nende kuvamist läbi Apple
+                            kalendri.</p>
+                    </div>
+                </div>
+
+                <div class="project-card col-12 col-md-5 rounded second-color my-4 pe-5 p-4 d-flex flex-column text-break">
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">PuhastusProff OÜ Finar</h2>
+                    <div class="flex-grow-1 d-flex align-items-center">
+                        <p class="fs-5 p-2">PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete
+                            haldamiseks.</p>
+                    </div>
+                </div>
+
             </div>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">PuhastusProff OÜ Finar</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete
-                    haldamiseks.</p>
-                <p class="fs-5 p-2">Tegelesin tõrgete parandamise, funktsionaalsuse arendamise, andmebaasi
-                    struktuuri arendamise, varundamise, taastamise ning tihti andmebaasi migreerimisega MSSQL ja
-                    MySQL vahel.</p>
-                <p class="fs-5 p-2"><a href="https://pp3.puhastusproff.ee/finar">pp3.puhastusproff.ee/finar</a></p>
+            <div class="row justify-content-evenly">
+
+                <div class="project-card col-12 col-md-5 rounded second-color my-4 pe-5 p-4 d-flex flex-column text-break">
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">Mihkel Saare Puukool</h2>
+                    <div class="flex-grow-1 d-flex align-items-center">
+                        <p class="fs-5 p-2">PHP põhine veebiportaal taimede tellimiseks ja siseveeb tellimuste
+                            korraldamiseks.</p>
+                    </div>
+                </div>
+
+                <div class="project-card col-12 col-md-5 rounded second-color my-4 pe-5 p-4 d-flex flex-column text-break">
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">movies-api projekt</h2>
+                    <div class="flex-grow-1 d-flex align-items-center">
+                        <div>
+                            <p class="fs-5 p-2">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida
+                                kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada
+                                filmi
+                                detaile. Administraator võib keskkonnas kuvada logisid.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Mihkel Saare Puukool</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">PHP põhine veebiportaal taimede tellimiseks ja siseveeb tellimuste
-                    korraldamiseks.</p>
-                <p class="fs-5 p-2">Tegelesin administraatori ja tellimuste vaate arendamisega, uue vaate loomisega
-                    kullerile, sisestatud andmete automaatse salvestamisega kasutades WebSocketit.<br>
-                    Suurem muudatus, millega tegelesin oli visuaalne pakkimisjuhend, mis näitas, kuidas tuleks
-                    pakkida taimi konteineritesse. Selleks tuli kirjutada algoritm, mis sorteeris taimed kõrguse ja
-                    laiuse järgi kärudesse ja riiulitesse, et säästa ruumi.</p>
-                <p class="fs-5 p-2"><a href="https://mihkelsaar.ee">mihkelsaar.ee</a></p>
-            </div>
-
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">movies-api projekt</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida
-                    kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada filmi
-                    detaile. Administraator võib keskkonnas kuvada logisid.</p>
-                <p class="fs-5 p-2">Muudatused kajastuvad kõikide klientide brauserites WebSocketi abil.<br>
-                    Veebirakendus kasutab isesigneeritud sertifikaati.<br>
-                    End-point'id on dokumenteeritud Swaggeri abil.</p>
-                <p class="fs-5 p-2">Projekt kasutab Node.js, JavaScript, Vue.js ja Swagger’it.</p>
-                <p class="fs-5 p-2"><a
-                        href="https://github.com/pcbman43/movies-api">github.com/pcbman43/movies-api</a></p>
-            </div>
 
         </div>
-
     </div>
 
 </div>
