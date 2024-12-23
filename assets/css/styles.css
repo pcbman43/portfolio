@@ -65,3 +65,25 @@ img.main {
     transition: transform 0.3s ease, background-color 0.3s ease !important; /* Smooth transition */
     cursor: pointer; /* Change the cursor to a pointer */
 }
+
+.project-card:active {
+    color: black;
+    background-color: white;
+}
+
+/* Starting point */
+.my-animated-modal .modal-dialog {
+    transform: scale(0.1);
+    transition: transform 0.6s ease, transform-origin 0.3s ease;
+}
+
+/* Ending point */
+.my-animated-modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Closing state (applies when hiding the modal) */
+.my-animated-modal:not(.show) .modal-dialog {
+    transform: scale(0.1);
+    opacity: 0;
+}
