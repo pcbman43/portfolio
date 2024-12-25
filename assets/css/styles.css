@@ -58,32 +58,60 @@ img.main {
     color: #aaacb1;
 }
 
+.project-card {
+    position: relative;
+    filter: blur(0px);
+    transition: filter 0.5s ease;
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+
+    background-image: url('/assets/img/eye.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth fade transition */
+
+    /* Offset the element by its own size */
+    transform: translate(-50%, -50%); /* Centering magic */
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
 .project-card:hover {
-    color: white;
-    background-color: #44484c !important; /* Change background color on hover */
-    transform: scale(1.05) !important; /* Slightly enlarge the card */
-    transition: transform 0.3s ease, background-color 0.3s ease !important; /* Smooth transition */
     cursor: pointer; /* Change the cursor to a pointer */
+    filter: blur(2px);
 }
 
 .project-card:active {
-    color: black;
-    background-color: white;
+    background-color: #303436;
 }
 
 /* Starting point */
-.my-animated-modal .modal-dialog {
+.projectModalAnimation .modal-dialog {
     transform: scale(0.1);
     transition: transform 0.6s ease, transform-origin 0.3s ease;
 }
 
 /* Ending point */
-.my-animated-modal.show .modal-dialog {
+.projectModalAnimation.show .modal-dialog {
     transform: scale(1);
 }
 
 /* Closing state (applies when hiding the modal) */
-.my-animated-modal:not(.show) .modal-dialog {
+.projectModalAnimation:not(.show) .modal-dialog {
     transform: scale(0.1);
     opacity: 0;
 }
