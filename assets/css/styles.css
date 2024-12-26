@@ -42,20 +42,30 @@ img.main {
     height: 100%;
 }
 
-.first-color {
+/* Defining custom colours */
+
+.bg-first {
     background: #1d1f20;
 }
 
-.second-color {
+.bg-second {
     background: #222426;
 }
 
-.third-color {
+.bg-third {
     background: #303436;
 }
 
-.fourth-color {
+.bg-fourth {
     color: #aaacb1;
+}
+
+.border-third {
+    border: 1px solid #303436;
+}
+
+.grainy-bg {
+    background-image: url('data:image/svg+xml, <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" /></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" /></svg>');
 }
 
 .project-card {
