@@ -5,6 +5,12 @@ body {
     color: #aaacb1;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: barlow, system-ui;
+}
+
+@font-face {
+    font-family: barlow;
+    src: url('/assets/fonts/Barlow-Regular.ttf');
 }
 
 /*body {
@@ -21,7 +27,7 @@ a {
 }
 
 .navbar {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
 }
 
 .navbar-brand:hover {
