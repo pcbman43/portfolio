@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mihkel Kougia - Portfoolio</title>
+    <title>Mihkel Kougia — Full-stack software developer</title>
 
     <!-- Disable indexing of page -->
     <meta name="robots" content="noindex">
@@ -23,33 +23,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="fourth-color">
+<body class="bg-fourth" data-bs-theme="dark">
 
-<div class="container p-4 first-color" style="min-height: 100vh">
+<!-- Modal -->
+<div class="modal projectModalAnimation" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 100vw;">
+        <div class="modal-content bg-second container border-third" style="min-height: 90vh">
+            <div class="modal-header px-0 mx-3">
+                <h1 class="modal-title fw-bold fs-2" id="projectModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body me-5"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container p-4 bg-first" style="min-height: 100vh">
 
     <nav class="navbar mb-4 navbar-expand-lg justify-content-between border-bottom position-relative">
 
         <div class="d-flex w-100 align-items-center justify-content-between pb-4 navbar-main">
+
             <div class="d-flex align-items-center">
                 <div>
-                    <a href="index.html" class="navbar-brand fourth-color">Mihkel Kougia</a>
+                    <a href="index.html" class="navbar-brand bg-fourth">Mihkel Kougia</a>
                 </div>
 
                 <div class="d-none d-md-block">
-                    <a href="about.html" class="mx-2 rounded third-color p-2 fourth-color">Minust</a>
-                    <a href="projects.html" class="mx-2 rounded third-color p-2 fourth-color">Projektid</a>
-                    <a href="tech.html" class="mx-2 rounded third-color p-2 fourth-color">Tehnilised oskused</a>
+                    <a href="about.html" class="mx-2 rounded bg-third p-2 bg-fourth">Minust</a>
+                    <a href="projects.html" class="mx-2 rounded bg-third p-2 bg-fourth">Projektid</a>
+                    <a href="tech.html" class="mx-2 rounded bg-third p-2 bg-fourth">Tehnilised oskused</a>
                 </div>
             </div>
 
             <div class="d-md-none position-absolute start-50 translate-middle-x" data-bs-toggle="collapse"
                  href="#mobileNav" role="button">
-                <i class="bi bi-list fourth-color" style="font-size: 2rem;"></i>
+                <i class="bi bi-list bg-fourth" style="font-size: 2rem;"></i>
             </div>
 
             <div>
                 <a href="https://github.com/pcbman43">
-                    <i class="bi bi-github fourth-color" style="font-size: 2rem;"></i>
+                    <i class="bi bi-github bg-fourth" style="font-size: 2rem;"></i>
                 </a>
             </div>
 
@@ -58,9 +73,9 @@
         <!-- Vertical Navigation Menu (hidden by default, toggled with collapse) -->
         <div class="w-100 d-flex justify-content-center d-md-none">
             <div id="mobileNav" class="text-center collapse">
-                <a href="about.html" class="d-block p-2 fourth-color border-top">Minust</a>
-                <a href="projects.html" class="d-block p-2 fourth-color border-top">Projektid</a>
-                <a href="tech.html" class="d-block p-2 fourth-color border-top">Tehnilised oskused</a>
+                <a href="about.html" class="d-block p-2 bg-fourth border-top">Minust</a>
+                <a href="projects.html" class="d-block p-2 bg-fourth border-top">Projektid</a>
+                <a href="tech.html" class="d-block p-2 bg-fourth border-top">Tehnilised oskused</a>
             </div>
         </div>
     </nav>
@@ -68,68 +83,162 @@
     <div class="row my-5">
         <div class="col-12 d-flex flex-column justify-content-between">
 
-            <h1 class="text-start display-6 fw-bold text-uppercase">Projektid</h1>
+            <h1 class="text-center display-6 fw-bold text-uppercase">Projektid</h1>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Kriit</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
-                <p class="fs-5 p-2">Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel sisestada
-                    ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete lahendused ja
-                    küsida tagasisidet.</p>
-                <p class="fs-5 p-2">Tegelen full-stack arendajana tõrgete likvideerimise ja
-                    funktsionaalsuse arendamisega.</p>
+            <h2 class="text-center display-7 fw-bold text-uppercase m-4">aktiivne</h2>
+
+            <div class="row justify-content-evenly">
+                <!-- Kriit -->
+                <div class="project-card col-12 col-lg-5 rounded bg-second p-4 border-third"
+                     data-bs-toggle="modal" data-bs-target="#projectModal"
+                     data-bs-title="Kriit"
+                     data-bs-content='
+                    <div class="fs-5">
+                        <p>Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
+                        <p>Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel sisestada
+                            ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete lahendused
+                            ja
+                            küsida tagasisidet.</p>
+                        <p>Tegelen full-stack arendajana tõrgete likvideerimise ja
+                            funktsionaalsuse arendamisega.</p>
+                    </div>
+                '>
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2 text-break">Kriit</h2>
+                    <div class="me-5">
+                        <p class="fs-5 p-2">Diara Infra OÜ-s on hetkel töös projekt Kriit.</p>
+                        <p class="fs-5 p-2">Kriit on Viljandi Kutseõppekeskuse siseveeb, mis võimaldab õpetajatel
+                            sisestada
+                            ülesandeid ja hindeid ning anda tagasisidet. Õpilased saavad üles laadida ülesannete
+                            lahendused
+                            ja
+                            küsida tagasisidet.</p>
+                        <p class="fs-5 p-2">Tegelen full-stack arendajana tõrgete likvideerimise ja
+                            funktsionaalsuse arendamisega.</p>
+                    </div>
+                </div>
             </div>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">webuyanycarflorida.com</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">Veebiportaal kasutatud autode müümiseks, mis on kuvatav nutiseadmest ja arvutist
-                    ning võimaldab ankeetide täitmist, aja broneerimist ning nende kuvamist läbi Apple kalendri.</p>
-                <p class="fs-5 p-2">Projekt kasutab Node.js, Express.js, Handlebars ja SQLite’i.</p>
-                <p class="fs-5 p-2">Osalesin projektis full-stack arendajana.<br>
-                    Tegelesin kasutajaliidese arendamise, andmete valideerimisreeglite ja Apple kalendri
-                    integreerimisega, broneerimissüsteemi arendamisega ja administaatori keskkonna loomisega.</p>
-                <p class="fs-5 p-2"><a
-                        href="https://bitbucket.org/highpalm/webuyanycarflorida.com">bitbucket.org/highpalm/webuyanycarflorida.com</a>
-                </p>
+            <h2 class="text-center display-7 fw-bold text-uppercase m-4">valmis</h2>
+
+
+            <div class="row justify-content-evenly">
+
+                <!-- webuyanycarflorida.com -->
+                <div class="project-card col-12 col-lg-5 rounded bg-second my-4 p-4 d-flex flex-column text-break border-third"
+                     data-bs-toggle="modal" data-bs-target="#projectModal"
+                     data-bs-title="webuyanycarflorida.com"
+                     data-bs-content='
+                    <h1 class="fs-2 py-2 fw-bold text-uppercase text-break">Webapp that streamlines the management of car sales and appointments.</h1>
+                    <div class="fs-5">
+                        <h1>Introduction</h1>
+                        <p>In 2023, owner of High Palm Motors- a car dealership situated in Florida, ordered a web solution from Diara Infra OÜ that would simplify and centralise the management of car sales, preliminary payments and appointments.</p>
+
+                        <h1>My role</h1>
+                        <p>My job was to help build this project from the ground up. I worked alongside company owner and mentor Henno Täht, among two other interns.</p>
+                        <p>I was on the project as a full-stack developer, working on both the publicly accessible resources and administrator environment. It was my job to realise the designs requested by the client.<p>
+
+                        <h1>Challenges</h1>
+                        <p>The initial approach used PHP and the Halo framework developed by the company owner but was later switched to JavaScript and Express.js due to the developer team having more familiarity with it.</p>
+                        <p>The client also wished to manage appointments from their iCloud calendar. At the time we couldn&apos;t find a suitable library for managing iCloud data from our backend so we decided to write our own logic that would parse, send and receive data from the iCloud calendar utilising the CalDAV protocol.</p>
+                        <p>Due to our client operating from a different time zone than us we initially had many discrepancies in intended and actual booked times during development. Because of a lack of prior experience, this took some time but was eventually resolved.</p>
+                        <p>These combined challenges would take us months of work to get the intended result.</p>
+
+                        <h1>Conclusion</h1>
+                        <p>After 5 months of work we are able to deliver a result that would meet the client&apos;s wishes.</p>
+                        <p>This work ended up being a passion project and thesis for my final year at Tartu Vocational College. The website was publicly launched in late Febuary of 2024.</p>
+                    </div>
+                '>
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">webuyanycarflorida.com</h2>
+                    <div class="flex-grow-1 d-flex align-items-center me-5 me-5">
+                        <p class="fs-5 p-2">Webapp that streamlines the management of car sales and appointments.</p>
+                    </div>
+                </div>
+
+                <!-- PuhastusProff OÜ Finar -->
+                <div class="project-card col-12 col-lg-5 rounded bg-second my-4 p-4 d-flex flex-column text-break border-third"
+                     data-bs-toggle="modal" data-bs-target="#projectModal"
+                     data-bs-title="PuhastusProff OÜ Finar"
+                     data-bs-content='
+                    <div class="fs-5">
+                        <p>PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete haldamiseks.</p>
+                        <p>Tegelesin tõrgete parandamise, funktsionaalsuse arendamise, andmebaasi struktuuri arendamise, varundamise, taastamise ning tihti andmebaasi migreerimisega MSSQL ja MySQL vahel.</p>
+                    </div>
+                '>
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">PuhastusProff OÜ Finar</h2>
+                    <div class="flex-grow-1 d-flex align-items-center me-5">
+                        <p class="fs-5 p-2">PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete
+                            haldamiseks.</p>
+                    </div>
+                </div>
+
             </div>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">PuhastusProff OÜ Finar</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">PHP põhine siseveeb firma (kasutajad, osakonnad ja eelarved) andmete
-                    haldamiseks.</p>
-                <p class="fs-5 p-2">Tegelesin tõrgete parandamise, funktsionaalsuse arendamise, andmebaasi
-                    struktuuri arendamise, varundamise, taastamise ning tihti andmebaasi migreerimisega MSSQL ja
-                    MySQL vahel.</p>
-                <p class="fs-5 p-2"><a href="https://pp3.puhastusproff.ee/finar">pp3.puhastusproff.ee/finar</a></p>
+            <div class="row justify-content-evenly">
+
+                <!-- Mihkel Saare Puukool -->
+                <div class="project-card col-12 col-lg-5 rounded bg-second my-4 p-4 d-flex flex-column text-break border-third"
+                     data-bs-toggle="modal" data-bs-target="#projectModal"
+                     data-bs-title="Mihkel Saare Puukool"
+                     data-bs-content='
+                    <h1 class="fs-2 py-2 fw-bold text-uppercase text-break">Tree nursery intranet for managing orders, packaging and delivery.</h1>
+                    <div class="fs-5">
+                        <h1>Introduction</h1>
+                        <p>Our client, Mihkel Saar owns a tree nursery for which he has an internal tool for managing orders, packaging and deliveries. He requested further development for this tool.</p>
+
+                        <h1>My role</h1>
+                        <p>I worked on the project as a full-stack developer alongside company owner and mentor Henno Täht.</p>
+                        <p>My job was to ultimately improve the employee experience by eliminating undesired software behaviour by fixing bugs and changing default behaviour and adding requested functionality whilst ensuring the environment was easy to use on company devices, namely tablets.
+                            I worked largely on order management and package collection.<p>
+                        <p>I worked on shifting parts of the frontend saving system from manual to automatic with the use of WebSocket. Since this was a PHP web application, we decided to use Pusher to achieve this.</p>
+                        <p>I created a whole new page for order assemblers. This page shows who has to collect how many of which plant from what warehouse for what round of orders, alongside easily allowing package assemblers to mark what has been collected. This page includes a visual guide and table view with precise sorting and filtering functionality for easier management and overview of data. Employees can write internal comments for each round of orders and override plant values in case of stock shortage to reflect the actual amount in stock.</p>
+                        <p>I modified the existing orders page for employees to be able to set the status of an order (In progress, Overbooked, Complete, etc.), assign an order packer, set internal comments, and easily mark plants as packaged.</p>
+                        <p>On top of adding the ability to specify a lot of internal aspects about an order or round, I also added colour-coding to the table views to reflect the status or to highlight the urgency of an order.</p>
+
+                        <h1>Challenges</h1>
+                        <p>The most challenging requested feature was a visual packing guide to help employees optimise the arrangement of plant trays on shelves to maximise storage efficiency. This would be used in the orders page with a modified version being used in the rounds page to display a collection guide for order assemblers.</p>
+                        <p>To address this, we developed an algorithm that sorts trays by height and width, optimises shelf space by pairing half-depth trays together and rotating those that cannot be paired, and plans container usage by fitting trays into shelves, moving to the next shelf if the width is exceeded and to the next container if the height is exceeded. The algorithm also calculates the number and percentage of containers used for delivery.</p>
+                        <p>This was my first experience designing and building an algorithm, making it a challenging process that spanned multiple months. The final solution met expectations and improved employees&apos; efficiency in packaging orders.</p>
+
+                        <h1>Conclusion</h1>
+                        <p>Before deploying changes to the live environment, we pushed the changes to a staging environment for the client to evaluate.
+                            The overall process took several months of work, but the client was satisfied with the outcome and I was satisfied with my efforts to better the intranet.</p>
+                        <p>This project gave me insight for how a business intranet might be structured and my first taste of writing massive amounts of logic in the form of an algorithm.</p>
+                    </div>
+                '>
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">Mihkel Saare Puukool</h2>
+                    <div class="flex-grow-1 d-flex align-items-center me-5">
+                        <p class="fs-5 p-2">Tree nursery intranet for managing orders, packaging and delivery.</p>
+                    </div>
+                </div>
+
+                <!-- movies-api projekt -->
+                <div class="project-card col-12 col-lg-5 rounded bg-second my-4 p-4 d-flex flex-column text-break border-third"
+                     data-bs-toggle="modal" data-bs-target="#projectModal"
+                     data-bs-title="movies-api projekt"
+                     data-bs-content='
+                    <div class="fs-5">
+                        <p">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada filmi detaile. Administraator võib keskkonnas kuvada logisid.</p>
+                        <p">Muudatused kajastuvad kõikide klientide brauserites WebSocketi abil.<br>
+                        Veebirakendus kasutab isesigneeritud sertifikaati.<br>
+                        End-point&apos;id on dokumenteeritud Swaggeri abil.</p>
+                        <p">Projekt kasutab Node.js, JavaScript, Vue.js ja Swagger’it.</p>
+                    </div>
+                '>
+                    <h2 class="text-start display-7 fw-bold text-uppercase p-2">movies-api projekt</h2>
+                    <div class="flex-grow-1 d-flex align-items-center me-5">
+                        <div>
+                            <p class="fs-5 p-2">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida
+                                kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada
+                                filmi
+                                detaile. Administraator võib keskkonnas kuvada logisid.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">Mihkel Saare Puukool</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">PHP põhine veebiportaal taimede tellimiseks ja siseveeb tellimuste
-                    korraldamiseks.</p>
-                <p class="fs-5 p-2">Tegelesin administraatori ja tellimuste vaate arendamisega, uue vaate loomisega
-                    kullerile, sisestatud andmete automaatse salvestamisega kasutades WebSocketit.<br>
-                    Suurem muudatus, millega tegelesin oli visuaalne pakkimisjuhend, mis näitas, kuidas tuleks
-                    pakkida taimi konteineritesse. Selleks tuli kirjutada algoritm, mis sorteeris taimed kõrguse ja
-                    laiuse järgi kärudesse ja riiulitesse, et säästa ruumi.</p>
-                <p class="fs-5 p-2"><a href="https://mihkelsaar.ee">mihkelsaar.ee</a></p>
-            </div>
-
-            <h2 class="text-start display-7 fw-bold text-uppercase mt-4">movies-api projekt</h2>
-            <div class="rounded second-color">
-                <p class="fs-5 p-2">Veebirakendus ja API, mis lubab kasutajal registreeruda, sisse logida
-                    kasutajatunnuse ja parooliga või Google kontoga ning lisada, redigeerida või kustudada filmi
-                    detaile. Administraator võib keskkonnas kuvada logisid.</p>
-                <p class="fs-5 p-2">Muudatused kajastuvad kõikide klientide brauserites WebSocketi abil.<br>
-                    Veebirakendus kasutab isesigneeritud sertifikaati.<br>
-                    End-point'id on dokumenteeritud Swaggeri abil.</p>
-                <p class="fs-5 p-2">Projekt kasutab Node.js, JavaScript, Vue.js ja Swagger’it.</p>
-                <p class="fs-5 p-2"><a
-                        href="https://github.com/pcbman43/movies-api">github.com/pcbman43/movies-api</a></p>
-            </div>
 
         </div>
-
     </div>
 
 </div>
@@ -138,6 +247,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+<script src="assets/js/populate-bs-modal.js"></script>
+
 </body>
 
 </html>

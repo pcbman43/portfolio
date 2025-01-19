@@ -5,7 +5,12 @@ body {
     color: #aaacb1;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    font-family: barlow, system-ui;
+}
+
+@font-face {
+    font-family: barlow;
+    src: url('/assets/fonts/Barlow-Regular.ttf');
 }
 
 /*body {
@@ -22,7 +27,7 @@ a {
 }
 
 .navbar {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
 }
 
 .navbar-brand:hover {
@@ -43,18 +48,86 @@ img.main {
     height: 100%;
 }
 
-.first-color { 
-	background: #1d1f20; 
-}
-	
-.second-color { 
-	background: #222426; 
+/* Defining custom colours */
+
+.bg-first {
+    background: #1d1f20;
 }
 
-.third-color { 
-	background: #303436; 
+.bg-second {
+    background: #222426;
 }
 
-.fourth-color { 
-	color: #aaacb1; 
+.bg-third {
+    background: #303436;
+}
+
+.bg-fourth {
+    color: #aaacb1;
+}
+
+.border-third {
+    border: 1px solid #303436;
+}
+
+.grainy-bg {
+    background-image: url('data:image/svg+xml, <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" /></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" /></svg>');
+}
+
+.project-card {
+    position: relative;
+    filter: blur(0px);
+    transition: filter 0.5s ease;
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+
+    background-image: url('/assets/img/eye.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth fade transition */
+
+    /* Offset the element by its own size */
+    transform: translate(-50%, -50%); /* Centering magic */
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+.project-card:hover {
+    cursor: pointer; /* Change the cursor to a pointer */
+    filter: blur(2px);
+}
+
+.project-card:active {
+    background-color: #303436;
+}
+
+/* Starting point */
+.projectModalAnimation .modal-dialog {
+    transform: scale(0.1);
+    transition: transform 0.6s ease, transform-origin 0.3s ease;
+}
+
+/* Ending point */
+.projectModalAnimation.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Closing state (applies when hiding the modal) */
+.projectModalAnimation:not(.show) .modal-dialog {
+    transform: scale(0.1);
+    opacity: 0;
 }
