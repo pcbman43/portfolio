@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: barlow;
-    src: url('/assets/fonts/Barlow-Regular.ttf');
+    src: url('/fonts/Barlow-Regular.ttf');
 }
 
 /*body {
@@ -90,7 +90,7 @@ img.main {
     width: 80%;
     height: 80%;
 
-    background-image: url('/assets/img/eye.svg');
+    background-image: url('/img/eye.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
